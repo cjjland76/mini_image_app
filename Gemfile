@@ -54,3 +54,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_magick'
 gem 'pry-rails'
+gem "aws-sdk-s3", require: false
+
+group :production do
+  gem 'rails_12factor'
+end
